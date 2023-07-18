@@ -2,7 +2,7 @@ import streamlit as sl
 import pandas as pd
 #import pickle
 import plotly.express as px
-from wordcloud import WordCloud
+import WordCloud
 import matplotlib.pyplot as plt
 
 @sl.cache_data
