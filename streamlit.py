@@ -11,7 +11,7 @@ with sl.sidebar:
 
 	tabs = {'Home': tab_home,
 		'Présentation': tab_presentation,
-		'Analyse/Dataviz': tab_analyse
+		'Analyse': tab_analyse
 		}
 
 	tab_selection = sl.radio('Menu', list(tabs.keys()))
@@ -20,4 +20,4 @@ tabs[tab_selection]()
 
 sl.divider()
 
-sl.caption('**Etude de marché vin** - by [Chinnawat Wisetwongsa](https://linkedin.com/in/wisetwongsa/)')
+sl.caption('**Domaine des Croix - Etude de marché** - by [Chinnawat Wisetwongsa](https://linkedin.com/in/wisetwongsa/)')
