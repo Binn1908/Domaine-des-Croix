@@ -1,7 +1,7 @@
 import streamlit as sl
 
 def tab_presentation():
-	sl.title("page présentation")
+	sl.title("Présentation")
 
 	tab1, tab2, tab3 = sl.tabs(["Contexte", "Méthodologie/Outils", "Code"])
 
