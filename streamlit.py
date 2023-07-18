@@ -5,9 +5,8 @@ from tab_presentation import tab_presentation
 from tab_analyse import tab_analyse
 
 with sl.sidebar:
-
-	affiche = Image.open('logo.png')
-	sl.sidebar.image(affiche)
+	img = Image.open('logo.png')
+	sl.sidebar.image(img)
 
 	tabs = {'Home': tab_home,
 		'Présentation': tab_presentation,
@@ -20,4 +19,4 @@ tabs[tab_selection]()
 
 sl.divider()
 
-sl.caption('**Domaine des Croix - Etude de marché** - by [Chinnawat Wisetwongsa](https://linkedin.com/in/wisetwongsa/)')
+sl.caption('**Le Domaine des Croix - Etude de marché** - by [Chinnawat Wisetwongsa](https://linkedin.com/in/wisetwongsa/)')
