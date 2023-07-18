@@ -14,7 +14,7 @@ with sl.sidebar:
 		'Analyse/Dataviz': tab_analyse
 		}
 
-	tab_selection = sl.radio('', list(tabs.keys()))
+	tab_selection = sl.radio('Menu', list(tabs.keys()))
 
 tabs[tab_selection]()
 
