@@ -2,7 +2,7 @@ import streamlit as sl
 import pandas as pd
 #import pickle
 import plotly.express as px
-import WordCloud
+#import WordCloud
 import matplotlib.pyplot as plt
 
 @sl.cache_data
@@ -26,11 +26,9 @@ def tab_analyse():
 	#projection='natural earth'
 	sl.plotly_chart(fig)
 
-	wordcloud = WordCloud(width = 480, height = 480, max_font_size = 200, min_font_size = 10)
-	wordcloud.generate_from_text(" ".join(df['description_clean']))
-	fig, ax = plt.subplots()
-	#plt.figure()
-	ax.imshow(wordcloud, interpolation = "bilinear")
-	plt.axis("off")
-	#plt.margins(x = 0, y = 0)
-	sl.pyplot(fig)
+	#wordcloud = WordCloud(width = 480, height = 480, max_font_size = 200, min_font_size = 10)
+	#wordcloud.generate_from_text(" ".join(df['description_clean']))
+	#fig, ax = plt.subplots()
+	#ax.imshow(wordcloud, interpolation = "bilinear")
+	#plt.axis("off")
+	#sl.pyplot(fig)
